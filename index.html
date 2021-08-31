@@ -27,20 +27,20 @@
         
         /* Modal Content */
         .modal-content {
-          background-color: green;
+          background-color: white;
           margin: auto;
           width: 700px;
           height: 525px;
           border-radius:20px;
         }
         /* Modal Content */
-        .modal-content2 {
+        /* .modal-content2 {
           background-color: #fefefe;
           margin: auto;
           width: 640px;
           height: 480px;
           border-radius:20px;
-        }
+        } */
         /* Modal Content */
         .modal-content3 {
           background-color: #fefefe;
@@ -136,10 +136,10 @@
     <!-- The Modal -->
     <div id="myModal" class="modal">
       <!-- Modal Camera Permission -->
-      <div class="modal-content">
+      <div class="modal-content simple-talkmail">
           <div class="">
                 <div class="camera-permission">
-                  <h1>Welcome. Let's record your TalkMail</h1>
+                  <h2>Welcome. Let's record your TalkMail</h2>
                   <small style="color: gray; position:relative;">Self video viewers record responses at anytime</small>
                   
                   <div>
@@ -148,45 +148,38 @@
                       <small>You have selected simple TalkMail. <span style="color:blue;cursor:pointer" onclick="showHide(id={hide:'modal-content',show:'modal-talk-mail-type'})">Change</span></small>
                     </div>
                   </div>
-                  <!-- <p>ASK FOR MIC/CAMERA PERMISSION HERE IF NOT SET AT TIME OF INSTALL</p> -->
-                  <!-- <button style="margin-top:15px" onclick="start()" class="start-btn">Let's Begin</button> -->
                   <button style="margin-top:15px" onclick="showHide(id={hide:'modal-content',show:'first-section'})" class="start-btn">Let's Begin</button>
-                  <div style="margin-top: -476px; margin-left: 629px" class="cross">
+                  <div style="margin-top: -510px; margin-left: 700px" class="cross">
                     <i class="fas fa-times"></i>
-                </div>
+                  </div>
+                  <div style="margin-top:-475px" class="setting">
+                    <i class="fas fa-cog"></i>
+                  </div>
                 </div>
           </div>
       </div>
 
-      <!-- Modal First Section -->
-      <div class="first-section modal-content">
-        <!-- <h2>First Section</h2> -->
-        <div style="width:640px; height:480px; overflow:hidden; border-radius:20px">
-          <video muted id="videoElement" autoplay style="background-image: linear-gradient(black, white, black); width:853px; margin-top:-80px">
+      <!-- Modal First Section (Record Section) -->
+      <div  style="display:none" class="first-section modal-content">
+        <div style="width:700px; height:525px;position:relative; overflow:hidden; border-radius:20px">
+          <video muted id="videoElement" autoplay style="background-image: linear-gradient(black, white, black); width:933px; margin-top:-88px">
             <source src="media/sampleVideo.mkv" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-        <!-- <div class="enhance" style="width:130px; cursor: pointer;margin-left:250px" onclick="changeAction()"> -->
         <div class="enhance" style="width:130px; cursor: pointer;margin-left:250px" onclick="showHide(id={hide:'first-section',show:'modal-talk-mail-type'})">
           <p style="margin-top:8px">Change Action</p>
         </div>
           <div class="icons">
-              <!-- <div style="cursor: pointer; margin-left: 210px" class="delete">
-                <i style="margin-left: -11px; margin-top: -7px; position: absolute" class="fas fa-times"></i>
-              </div> -->
-              <!-- <i onclick="firstRecord()" style="cursor: pointer" class="fas fa-circle record"></i> -->
               <i onclick="showHide(id={hide:'first-section',show:'second-section'})" style="cursor: pointer" class="fas fa-circle record"></i>
-              <!-- <div style="cursor: pointer; margin-left: 358px" class="send">
-                <i style="margin-left: -15px; margin-top: -7px; position: absolute" class="fas fa-paper-plane"></i>
-              </div> -->
+              <span style="color:white; position: relative">Record</span>
           </div>
-          <span style="color:white; position: absolute; margin-top:90px; margin-left: -30px">Record</span>
-          <div class="setting">
+
+          <div style="margin-top: -510px; margin-left: 700px" class="cross">
+            <i class="fas fa-times"></i>
+          </div>
+          <div style="margin-top:-475px" class="setting">
             <i class="fas fa-cog"></i>
-          </div>
-          <div class="cross">
-              <i class="fas fa-times"></i>
           </div>
           <!-- <div style="margin-left:-570px; margin-top:10px; cursor:pointer" class="video" onclick="selectRecordType()"> -->
           <div style="margin-left:-570px; margin-top:10px; cursor:pointer" class="video" onclick="showHide(id={hide:'first-section',show:'select-record-type'})">
@@ -447,7 +440,7 @@
                         <small style="color:gray">Self Video anyone can see</small>
                       </div><br>
                       <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="simpleTalkMail()">Select</button> -->
-                      <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'simple-talk-mail'})">Select</button>
+                      <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'simple-talkmail'})">Select</button>
                     </div>
                   </div>
                   
@@ -487,33 +480,6 @@
               </div>
         </div>
     </div>
-
-    <!-- Modal Single Simple TalkMail -->
-    <div style="display:none"class="modal-content simple-talk-mail">
-      <div class="">
-            <div class="camera-permission">
-              <h1>Select Your TalkMail Type</h1>
-              <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">Self video viewers record responses at anytime</small>
-              <div style="display:flex;margin-top:50px">
-                <div style="margin-left:200px">
-                  <img style="width:220px" src="/media/simpleTalkmailFull.png" alt="talk-mail type"><br>
-                  <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'simple-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
-                  <div>
-                    <!-- <div>
-                      <h3>Simple TalkMail</h3>
-                      <small>Self Video anyone can see</small>
-                    </div> -->
-                    <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="simpleToFirstSection()">Let's Begin</button> -->
-                    <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'simple-talk-mail',show:'first-section'})">Let's Begin</button>
-                  </div>
-                </div>
-              </div>
-              <div style="margin-top: -480px; margin-left: 629px" class="cross">
-                <i class="fas fa-times"></i>
-            </div>
-            </div>
-      </div>
-  </div>
 
     <!-- Modal Single Self Destruct TalkMail -->
     <div style="display:none"class="modal-content self-destruct-talk-mail">
@@ -588,9 +554,9 @@
 
 
       <!-- Modal Second Section (Pause section) -->
-      <div class="second-section modal-content2">
-        <div style="width:640px; height:480px; overflow:hidden; border-radius:20px">
-          <video id="videoElement2" autoplay="true" style="background-image: linear-gradient(black, white, black); width:853px; margin-top:-80px">
+      <div class="second-section modal-content">
+        <div style="width:700px; height:525px; overflow:hidden; border-radius:20px">
+          <video id="videoElement2" autoplay="true" style="background-image: linear-gradient(black, white, black); width:933px; margin-top:-88px">
             <!-- <source src="media/sampleVideo.mkv" type="video/mp4"> -->
               Your browser does not support the video tag.
             </video>

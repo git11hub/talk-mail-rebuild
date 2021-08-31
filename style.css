@@ -33,13 +33,13 @@
 
   /* First Section */
   .first-section {
-    display: none;
-    border: 1px solid rgba(211, 211, 211, 0);
-    width: 640px;
-    height: 480px;
-    border-radius: 20px;
-    box-shadow: 1px 10px 10px 1px #888888;
-    text-align: center;
+    /* display: none; */
+    /* border: 1px solid rgba(211, 211, 211, 0); */
+    /* width: 700px;
+    height: 525px; */
+    /* border-radius: 20px; */
+    /* box-shadow: 1px 10px 10px 1px #888888; */
+    /* text-align: center; */
   }
   /* Second Section */
   .second-section {
