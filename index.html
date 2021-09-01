@@ -16,7 +16,8 @@
           display: none; /* Hidden by default */
           position: fixed; /* Stay in place */
           z-index: 1; /* Sit on top */
-          padding-top: 100px; 
+          /* padding-top: 100px;  */
+          padding-top: 40px; 
           left: 0;
           top: 0;
           width: 100%; 
@@ -29,8 +30,8 @@
         .modal-content {
           background-color: white;
           margin: auto;
-          width: 700px;
-          height: 525px;
+          width: 892px;
+          height: 670px;
           border-radius:20px;
         }
         /* Modal Content */
@@ -62,16 +63,16 @@
           margin: 4px 2px;
           cursor: pointer;
           border-radius:5px;
-          margin-top:600px;
-          /* margin-left: 1200px; */
-          margin-left: 100px;
+          margin-top:650px;
+          margin-left: 1300px;
+          /* margin-left: 100px; */
         }
         </style>
 </head>
 <body>
 
-  <div class="extension-button" style="left:1400px; position:relative">
-    <button onclick="showHide(id={hide:'extension-button',show:'after-extension-click'})" style="background-color:red; border:none; border-radius:25px; padding:10px; cursor:pointer"><i style="color:white" class="fas fa-video"></i></button>
+  <div class="extension-button">
+    <button onclick="showHide(id={hide:'extension-button',show:'after-extension-click'})" style="position:relative; left:1400px; background-color:red; border:none; border-radius:25px; padding:10px; cursor:pointer"><i style="color:white" class="fas fa-video"></i></button>
   </div>
 
   <!-- Extension Modal -->
@@ -139,28 +140,32 @@
 
       <!-- Modal First Section (Record Section) -->
       <div class="first-section modal-content">
-        <div style="width:700px; height:525px;position:relative; overflow:hidden; border-radius:20px">
-          <video muted id="videoElement" autoplay style="background-image: linear-gradient(black, white, black); width:933px; margin-top:-88px">
+        <div style="width:892px; height:670px;position:relative; overflow:hidden; border-radius:20px">
+          <!-- <video muted id="videoElement" autoplay style="background-image: linear-gradient(black, white, black); width:933px; margin-top:-88px"> -->
+          <video muted id="videoElement" autoplay style="background-image: linear-gradient(black, white, black); width:1200px; margin-top:-115px">
             <source src="media/sampleVideo.mkv" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
-        <div class="enhance" style="width:130px; cursor: pointer;margin-left:280px" onclick="showHide(id={hide:'first-section',show:'modal-talk-mail-type'})">
-          <p style="margin-top:8px;left:10px; position:relative">Simple TalkMail</p>
+        <div class="enhance" style="width:130px; cursor: pointer;margin-left:380px" onclick="showHide(id={hide:'first-section',show:'modal-talk-mail-type'})">
+          <p style="margin-top:12px;left:10px; position:relative">Simple TalkMail</p>
         </div>
           <div class="icons">
-              <i onclick="showHide(id={hide:'first-section',show:'second-section'})" style="cursor: pointer; left:355px" class="fas fa-circle record"></i>
+              <i onclick="showHide(id={hide:'first-section',show:'second-section'})" style="cursor: pointer; left:451px" class="fas fa-circle record"></i>
               <span style="color:white; position: relative; top:80px">Record</span>
           </div>
 
-          <div style="margin-top: -425px; margin-left: 700px" class="cross">
+          <div style="position:relative;top:-140px">
+            <div style="margin-top: -425px; margin-left: 880px" class="cross">
             <i class="fas fa-times"></i>
+            </div>
+            <div style="margin-top:-400px" class="setting">
+              <i class="fas fa-cog"></i>
+            </div>
           </div>
-          <div style="margin-top:-390px" class="setting">
-            <i class="fas fa-cog"></i>
-          </div>
+
           <button class="enhance" style="cursor:pointer; position:relative; left:-240px; width:130px" onclick="showHide(id={hide:'first-section',show:'select-record-type'})">Video/Audio</button>
-          <button class="enhance" style="cursor:pointer; position:relative; left:300px;top:-25px; width:130px" onclick="showHide(id={hide:'first-section',show:'branding'})">No Branding</button>
+          <button class="enhance" style="cursor:pointer; position:relative; left:100px;top:0px; width:130px" onclick="showHide(id={hide:'first-section',show:'branding'})">No Branding</button>
       </div>
 
         <!-- Modal Select Record Type -->
@@ -169,22 +174,25 @@
                 <div class="camera-permission">
                   <h2>Select Record Type</h2>
                   <small style="color: gray; position:relative;">What makes TalkMail look-like in your Email</small>
-                  <div style="display:flex;margin-top:50px;margin-left:130px">
-                    <div style="margin-left:40px; margin-right:10px">
-                      <img id="video-active" onclick="videoActive()" style="width:100%; cursor:pointer" src="/media/video.png" alt="talk-mail type">
-                      <img id="video-inactive" onclick="videoInactive()" style="width:100%;display:none; cursor:pointer" src="/media/videoOff.png" alt="talk-mail type">
+                  <div style="display:flex;margin-top:50px; margin:auto; width:892px; height:473px; background-color:rgba(247, 247, 247, 0.72);">
+                    <div style="margin-left:250px;margin-top:100px; margin-right:10px">
+                      <img id="video-active" onclick="videoActive()" style="width:175px; cursor:pointer" src="/media/video.png" alt="talk-mail type">
+                      <img id="video-inactive" onclick="videoInactive()" style="width:175px;display:none; cursor:pointer" src="/media/videoOff.png" alt="talk-mail type">
                     </div>
                     
-                    <div>
-                      <img id="audio-active" onclick="audioActive()" style="width:100%; cursor:pointer" src="/media/audio.png" alt="talk-mail type">
-                      <img id="audio-inactive" onclick="audioInactive()" style="width:100%;display:none; cursor:pointer" src="/media/audioOff.png" alt="talk-mail type">
+                    <div style="margin-top:100px">
+                      <img id="audio-active" onclick="audioActive()" style="width:175px; cursor:pointer" src="/media/audio.png" alt="talk-mail type">
+                      <img id="audio-inactive" onclick="audioInactive()" style="width:175px;display:none; cursor:pointer" src="/media/audioOff.png" alt="talk-mail type">
                     </div>                    
                   </div>
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                    <i class="fas fa-times"></i>
-                  </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
+
+                  <div style="position:relative;top:-160px">
+                    <div style="margin-top:-390px" class="setting">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                      <i class="fas fa-times"></i>
+                    </div>
                   </div>
                 <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="cancelRecordTypeToFirstSection()">Cancel</button> -->
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'select-record-type',show:'first-section'})">Cancel</button>
@@ -199,13 +207,14 @@
           <div class="">
                 <div class="camera-permission">
                   <h1>Branding</h1>
-                  <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
-                    <div style="display:flex; margin-left:200px">
+                  <div style="height:473px; background-color:rgba(211, 211, 211, 0.164)">
+                    <div style="display:flex; margin-left:310px">
                       <h4>Branding Style</h4>
                       <h4 style="color:lightgray;margin-left:10px;cursor:pointer" onclick="showHide(id={hide:'branding',show:'branding-assets'})">Branding Assets</h4>
                     </div>
-                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
-                    <div style="display:flex;margin-top:50px">
+                    <hr style="width:50px;margin-left:340px;margin-top:-10px;border:1px solid">
+
+                    <div style="display:flex;margin-top:120px; margin-left:70px">
                       <div style="margin-left:40px; margin-right:10px">
                         <img style="width:100%;cursor:pointer" src="/media/noBranding.png" alt="talk-mail type">
                       </div>
@@ -217,14 +226,16 @@
                       <div style="margin-right:40px">
                         <img onclick="showHide(id={hide:'branding',show:'branding-stripe-2-active'})" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type">
                       </div>
-                  </div>
+                    </div>
                   </div>
                   
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                    <i class="fas fa-times"></i>
-                  </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
+                  <div style="position:relative;top:-160px">
+                    <div style="margin-top:-390px" class="setting">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                      <i class="fas fa-times"></i>
+                    </div>
                   </div>
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding',show:'first-section'})">Cancel</button>
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding',show:'first-section'})">Save</button>
@@ -237,12 +248,12 @@
           <div class="">
                 <div class="camera-permission">
                   <h1>Branding</h1>
-                  <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
-                    <div style="display:flex; margin-left:200px">
+                  <div style="height:473px;background-color:rgba(211, 211, 211, 0.164)">
+                    <div style="display:flex; margin-left:310px">
                       <h4 style="color:lightgray;margin-right:10px;cursor:pointer" onclick="showHide(id={hide:'branding-assets',show:'branding'})">Branding Style</h4>
                       <h4>Branding Assets</h4>
                     </div>
-                    <hr style="width:50px;margin-left:350px;margin-top:-10px;border:1px solid">
+                    <hr style="width:50px;margin-left:470px;margin-top:-10px;border:1px solid">
 
                     <div style="display:flex;margin-top:50px">
                       <img style="height:255px;margin-top:-40px;margin-left:70px" src="./media/branding-assets/Rectangle-407.png" alt="">
@@ -293,13 +304,17 @@
                         </div>                        
                       </div>
                     </div>
-                  </div>                  
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                    <i class="fas fa-times"></i>
+                  </div> 
+
+                  <div style="position:relative;top:-160px">
+                    <div style="margin-top:-390px" class="setting">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                      <i class="fas fa-times"></i>
+                    </div>
                   </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
-                  </div>
+
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-assets',show:'first-section'})">Cancel</button>
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-assets',show:'first-section'})">Save</button>
                 </div>
@@ -311,34 +326,37 @@
           <div class="">
                 <div class="camera-permission">
                   <h1>Branding</h1>
-                  <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
-                    <div style="display:flex; margin-left:200px">
+                  <div style="height:473px;background-color:rgba(211, 211, 211, 0.164)">
+                    <div style="display:flex; margin-left:310px">
                       <h4>Branding Style</h4>
                       <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
                     </div>
-                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
+                    <hr style="width:50px;margin-left:340px;margin-top:-10px;border:1px solid">
                     
-                    <div style="display:flex;margin-top:50px">
-                    <div style="margin-left:40px; margin-right:10px">
-                      <img onclick="showHide(id={hide:'branding-stripe-1-active',show:'branding'})" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type">
+                    <div style="display:flex;margin-top:120px; margin-left:70px">
+                      <div style="margin-left:40px; margin-right:10px">
+                        <img onclick="showHide(id={hide:'branding-stripe-1-active',show:'branding'})" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:10px">
+                        <img style="width:100%;cursor:pointer" src="/media/stripe1.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:40px">
+                        <img onclick="showHide(id={hide:'branding-stripe-1-active',show:'branding-stripe-2-active'})" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type">
+                      </div>
                     </div>
-                    
-                    <div style="margin-right:10px">
-                      <img style="width:100%;cursor:pointer" src="/media/stripe1.png" alt="talk-mail type">
-                    </div>
-                    
-                    <div style="margin-right:40px">
-                      <img onclick="showHide(id={hide:'branding-stripe-1-active',show:'branding-stripe-2-active'})" style="width:100%;cursor:pointer" src="/media/stripe2InActive.png" alt="talk-mail type">
-                    </div>
-                  </div>
                   </div>
                   
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                    <i class="fas fa-times"></i>
+                  <div style="position:relative;top:-160px">
+                    <div style="margin-top:-390px" class="setting">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                      <i class="fas fa-times"></i>
+                    </div>
                   </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
-                  </div>
+
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-stripe-1-active',show:'first-section'})">Cancel</button>
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-stripe-1-active',show:'first-section'})">Save</button>
                 </div>
@@ -350,34 +368,37 @@
           <div class="">
                 <div class="camera-permission">
                   <h1>Branding</h1>
-                  <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
-                    <div style="display:flex; margin-left:200px">
+                  <div style="height:473px;background-color:rgba(211, 211, 211, 0.164)">
+                    <div style="display:flex; margin-left:310px">
                       <h4>Branding Style</h4>
                       <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
                     </div>
-                    <hr style="width:50px;margin-left:230px;margin-top:-10px;border:1px solid">
+                    <hr style="width:50px;margin-left:340px;margin-top:-10px;border:1px solid">
 
-                    <div style="display:flex;margin-top:50px">
-                    <div style="margin-left:40px; margin-right:10px">
-                      <img onclick="showHide(id={hide:'branding-stripe-2-active',show:'branding'})" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type">
-                    </div>
-                    
-                    <div style="margin-right:10px">
-                      <img onclick="showHide(id={hide:'branding-stripe-2-active',show:'branding-stripe-1-active'})" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type">
-                    </div>
-                    
-                    <div style="margin-right:40px">
-                      <img style="width:100%;cursor:pointer" src="/media/stripe2.png" alt="talk-mail type">
-                    </div>
+                    <div style="display:flex;margin-top:120px; margin-left:70px">
+                      <div style="margin-left:40px; margin-right:10px">
+                        <img onclick="showHide(id={hide:'branding-stripe-2-active',show:'branding'})" style="width:100%;cursor:pointer" src="/media/noBrandingInActive.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:10px">
+                        <img onclick="showHide(id={hide:'branding-stripe-2-active',show:'branding-stripe-1-active'})" style="width:100%;cursor:pointer" src="/media/stripe1InActive.png" alt="talk-mail type">
+                      </div>
+                      
+                      <div style="margin-right:40px">
+                        <img style="width:100%;cursor:pointer" src="/media/stripe2.png" alt="talk-mail type">
+                      </div>
                   </div>
                   </div>
                   
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                    <i class="fas fa-times"></i>
+                  <div style="position:relative;top:-160px">
+                    <div style="margin-top:-390px" class="setting">
+                      <i class="fas fa-cog"></i>
+                    </div>
+                    <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                      <i class="fas fa-times"></i>
+                    </div>
                   </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
-                  </div>
+
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-stripe-2-active',show:'first-section'})">Cancel</button>
                 <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'branding-stripe-2-active',show:'first-section'})">Save</button>
                 </div>
@@ -646,9 +667,14 @@
                   <button style="position:relative; border-radius:25px; height:50px; left:320px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
                 </div>
                 
-              <div style="margin-top: -484px; margin-left: 629px" class="cross">
-                <i class="fas fa-times"></i>
-            </div>
+                <div style="position:relative;top:-105px">
+                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
+                  <i class="fas fa-times"></i>
+                  </div>
+                  <div style="margin-top:-390px" class="setting">
+                    <i class="fas fa-cog"></i>
+                  </div>
+                </div>
             </div>
       </div>
     </div>
@@ -1110,43 +1136,34 @@
       <div class="">
             <div class="camera-permission">
               <h2>Insert Style</h2>
-              <!-- <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small> -->
               <div style="display:flex;margin-top:50px">
               </div>
                 <video style="margin-top:-60px" width="300" height="300">
                 <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
-                <div style="position: absolute; margin-left:190px; margin-top:-30px">
+                <div style="position: relative; top:-30px">
                   <small>You have applied standard style</small>
-                  <!-- <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px" onclick="changeStyle()">Change</button> -->
                   <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'after-change-button-click'})">Change</button>
                 </div>
-                
 
-                <div style="display:flex; margin-top:48px;margin-left:15px; position:absolute">
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
-                  <div style="display:flex;margin-left:200px;position:absolute; width:280px">
-                    <h4 style="padding:10px">Finalize video</h4>
-                    <i style="position:absolute; color:green; margin-top:55px; margin-left:50px" class="fas fa-check-circle"></i>
-                    <h4 style="padding:10px">Finalize insert</h4>
-                  </div>                  
-                  <div style="position:absolute;margin-top:50px;margin-left:350px">
-                    <hr style="width:10px;width:50px;border-top: 2px solid">
-                  </div>
-                  <button style="margin-top:15px;margin-left:470px; width:140px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})"><span style="position:absolute;margin-left:-50px;margin-top:-10px">Insert TalkMail</span></button>
+                <div style="display:flex; top:25px;left:40px; position:relative">
+                  <button style="margin-top:15px;margin-left:-8px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
+                  <div style="display:flex; position:relative; left:140px; top:26px">
+                    <i style="padding:5px" class="far fa-circle"></i>
+                    <i style="padding:5px" class="fas fa-circle"></i>
+                  </div> 
+                  <button style="margin-top:15px;margin-left:280px; width:160px;position:relative; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})"><span style="position:relative;margin-left:-10px;margin-top:-10px">Insert TalkMail</span></button>
                 </div>
-                <!-- <div style="display:flex;margin-top:-7px">
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
-                  <h4 style="padding:10px">Edit Video</h4>
-                  <h4 style="padding:10px">Add Frames</h4>
-                  <h4 style="padding:10px">Insert Style</h4>
-                  <button style="margin-top:15px; border-radius:25px; height:50px;width:140px; background-color: rgb(250, 75, 75)" class="start-btn"><span style="margin-left:-52px;margin-top:-8px;position:absolute;">Insert TalkMail</span></button>
-                </div> -->
                 
-              <div style="margin-top: -367px; margin-left: 629px; position:absolute" class="cross">
-                <i class="fas fa-times"></i>
-            </div>
+                <div style="position:relative;top:-50px">
+                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
+                  <i class="fas fa-times"></i>
+                  </div>
+                  <div style="margin-top:-390px" class="setting">
+                    <i class="fas fa-cog"></i>
+                  </div>
+                </div>
             </div>
       </div>
   </div>
