@@ -42,7 +42,7 @@
     /* text-align: center; */
   }
   /* Second Section */
-  .second-section {
+  /* .second-section {
     display: none;
     border: 1px solid rgba(211, 211, 211, 0);
     width: 640px;
@@ -50,7 +50,7 @@
     border-radius: 20px;
     box-shadow: 1px 10px 10px 1px #888888;
     text-align: center;
-  }
+  } */
   /* Third Section */
   .third-section {
     display: none;
