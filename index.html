@@ -595,52 +595,55 @@
     <div style="display:none"class="modal-content finishing-touches">
       <div class="">
             <div class="camera-permission">
-              <h1>Finishing Touches</h1>
-              <!-- <small style="color: gray; margin-top: -20px; margin-left:-30px; position:absolute;">Edit your video</small> -->
-              <div style="display:flex;margin-top:50px">
-              </div>
-              <video style="margin-top:-70px;margin-bottom:28px" width="300" height="300">
+              <h2>Finishing Touches</h2>
+              <!-- <div style="display:flex;margin-top:50px">
+              </div> -->
+                <video style="top:-30px;position:relative" width="300" height="300">
                 <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
 
-                <div style="display:flex; margin-left:170px; position:absolute">
-                  <div style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px; display:flex;; cursor:pointer">
-                    <i style="margin-top:25px;margin-left:15px;font-size:20px" class="fas fa-plus-circle"></i>
+                <div style="display:flex; left:200px;top:-50px; position:relative">
+                  <div style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
+                    <i style="margin-left:15px;font-size:30px" class="fas fa-plus-circle"></i>
                     <div style="margin-top:-10px;margin-left:15px">
-                      <h5>Add</h5>
-                      <h5 style="margin-top:-15px">Video</h5>
                     </div>
                   </div>
-                  <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px">
+
+                  <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px">
                     <img style="width:100%" src="./media/person1.png" alt="">
                     <h5>Edit</h5>
                     <h5 onclick="showHide(id={hide:'finishing-touches',show:'first-section'})">Delete</h5>
                   </div>
 
-                  <div onclick="showHide(id={hide:'finishing-touches',show:'finishing-touches-video-dropdown'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px; display:flex;; cursor:pointer">
-                    <i style="margin-top:25px;margin-left:15px;font-size:20px" class="fas fa-plus-circle"></i>
+                  <div onclick="showHide(id={hide:'finishing-touches',show:'finishing-touches-video-dropdown'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
+                    <i style="margin-left:15px;font-size:30px" class="fas fa-plus-circle"></i>
                     <div style="margin-top:-10px;margin-left:15px">
-                      <h5>Add</h5>
-                      <h5 style="margin-top:-15px">Video</h5>
                     </div>
                   </div>                  
                 </div>
 
-                <div style="display:flex; margin-top:20px;margin-left:15px">
-                  <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
-                  <div style="display:flex;margin-left:200px;position:absolute">
-                    <h4 style="padding:10px">Finalize video</h4>                    
-                    <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
-                  </div>                  
-                  <div style="position:absolute;margin-top:50px;margin-left:235px">
-                    <hr style="width:10px;width:50px;border-top: 2px solid">
+                <!-- Working Here... -->
+                <!-- Working Here... -->
+                <!-- Working Here... -->
+                <!-- Working Here... -->
+                <div style="display:flex; top:-30px; position:relative">
+                  <div style="left:10px; position:relative">
+                    <i style="left:40px;top:0px; position:relative" class="fas fa-circle"></i>                    
+                    <button style="border-radius:25px; height:50px; width:160px; color:black; background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><span style="position:relative; left:10px">Record New</span></button>
                   </div>
                   
-                  
-                  <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
+                  <div style="display:flex; position:relative; left:150px; top:15px">
+                    <!-- <h4 style="">Finalize video</h4>                     -->
+                    <!-- <h4 style="color:lightgray">Finalize insert</h4> -->
+                    <i style="padding:5px" class="fas fa-circle"></i>
+                    <i style="padding:5px" class="far fa-circle"></i>
+                  </div>    
+
+                  <!-- <div style="position:relative; margin-top:50px;margin-left:235px">
+                    <hr style="width:10px;width:50px;border-top: 2px solid">
+                  </div> -->
+                  <button style="position:relative; border-radius:25px; height:50px; left:320px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
                 </div>
                 
               <div style="margin-top: -484px; margin-left: 629px" class="cross">
@@ -648,7 +651,7 @@
             </div>
             </div>
       </div>
-  </div>
+    </div>
 
     <!-- Modal Finishing Touches video dropdown -->
     <div style="display:none"class="modal-content finishing-touches-video-dropdown">
@@ -1106,11 +1109,11 @@
     <div style="display:none"class="modal-content insert-style">
       <div class="">
             <div class="camera-permission">
-              <h1>Insert Style</h1>
+              <h2>Insert Style</h2>
               <!-- <small style="color: gray; margin-top: -20px; margin-left:-150px; position:absolute;">What makes TalkMail look-like in your Email</small> -->
               <div style="display:flex;margin-top:50px">
               </div>
-              <video style="margin-top:-70px" width="300" height="300">
+                <video style="margin-top:-60px" width="300" height="300">
                 <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
