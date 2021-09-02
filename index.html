@@ -633,10 +633,10 @@
       </div>
 
     <!-- Modal Finishing Touches -->
-    <div style="display:none"class="modal-content finishing-touches">
+    <div style="display:none" class="modal-content finishing-touches">
       <div class="">
             <div class="camera-permission">
-              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Select Your TalkMail Type</h1>
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Finish Touches</h1>
               <!-- <div style="display:flex;margin-top:50px">
               </div> -->
               <div style="width:892px; height:473px; background-color:rgba(247, 247, 247, 0.72)">
@@ -646,119 +646,193 @@
                 </video>
   
                   <div style="display:flex; left:290px; position:relative">
-                    <div style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
+                    <div onclick="showHide(id={hide:'finishing-touches',show:'finishing-touches-video-dropdown-1st-btn'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
                       <i style="margin-left:30px;margin-top:20px;font-size:30px" class="fas fa-plus"></i>
-                      <div style="margin-top:-10px;margin-left:15px">
-                      </div>
+                      <!-- <div style="margin-top:-10px;margin-left:15px">
+                      </div> -->
                     </div>
-  
+
                     <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px">
                       <img style="width:100%" src="./media/person1.png" alt="">
                       <h5>Edit</h5>
                       <h5 onclick="showHide(id={hide:'finishing-touches',show:'first-section'})">Delete</h5>
                     </div>
-  
-                    <div onclick="showHide(id={hide:'finishing-touches',show:'finishing-touches-video-dropdown'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
+
+                    <div onclick="showHide(id={hide:'finishing-touches',show:'finishing-touches-video-dropdown-2nd-btn'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex; cursor:pointer">
                       <i style="margin-left:30px;margin-top:20px; font-size:30px" class="fas fa-plus"></i>
-                      <div style="margin-top:-10px;margin-left:15px">
-                      </div>
+                      
+                      <!-- <div style="margin-top:-10px;margin-left:15px">
+                      </div> -->
                     </div>                  
                   </div>
+
               </div>
 
-                <div style="display:flex; top:-30px; margin-left:40px; position:relative">
-                  <div style="left:10px; position:relative">
-                    <i style="left:40px;top:0px; position:relative" class="fas fa-circle"></i>                    
-                    <button style="border-radius:25px; height:50px; width:160px; color:black; background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><span style="position:relative; left:10px">Record New</span></button>
-                  </div>
-                  
-                  <div style="display:flex; position:relative; left:200px; top:15px">
-                    <!-- <h4 style="">Finalize video</h4>                     -->
-                    <!-- <h4 style="color:lightgray">Finalize insert</h4> -->
-                    <i style="padding:5px" class="fas fa-circle"></i>
-                    <i style="padding:5px" class="far fa-circle"></i>
-                  </div>    
-
-                  <!-- <div style="position:relative; margin-top:50px;margin-left:235px">
-                    <hr style="width:10px;width:50px;border-top: 2px solid">
-                  </div> -->
-                  <button style="position:relative; border-radius:25px; height:50px; left:450px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
+              <div style="display:flex; top:-30px; margin-left:40px; position:relative">
+                <div style="left:10px; position:relative">
+                  <i style="left:40px;top:0px; position:relative" class="fas fa-circle"></i>                    
+                  <button style="border-radius:25px; height:50px; width:160px; color:black; background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><span style="position:relative; left:10px">Record New</span></button>
                 </div>
                 
-                <div style="position:relative;top:-220px">
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
-                  </div>
-                  <div style="margin-top: -425px; margin-left: 890px" class="cross">
-                    <i class="fas fa-times"></i>
-                  </div>
+                <div style="display:flex; position:relative; left:200px; top:15px">
+                  <!-- <h4 style="">Finalize video</h4>                     -->
+                  <!-- <h4 style="color:lightgray">Finalize insert</h4> -->
+                  <i style="padding:5px" class="fas fa-circle"></i>
+                  <i style="padding:5px" class="far fa-circle"></i>
+                </div>    
+
+                <!-- <div style="position:relative; margin-top:50px;margin-left:235px">
+                  <hr style="width:10px;width:50px;border-top: 2px solid">
+                </div> -->
+                <button style="position:relative; border-radius:25px; height:50px; left:450px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
+              </div>
+                
+              <div style="position:relative;top:-220px">
+                <div style="margin-top:-390px" class="setting">
+                  <i class="fas fa-cog"></i>
                 </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
 
             </div>
       </div>
     </div>
 
-    <!-- Modal Finishing Touches video dropdown -->
-    <div style="display:none"class="modal-content finishing-touches-video-dropdown">
+    <!-- Modal Finishing Touches video dropdown (after 1st button click) -->
+    <div style="display:none" class="modal-content finishing-touches-video-dropdown-1st-btn">
       <div class="">
             <div class="camera-permission">
-              <h1>Finishing Touches</h1>
-              <!-- <small style="color: gray; margin-top: -20px; margin-left:-30px; position:absolute;">Edit your video</small> -->
-              <div style="display:flex;margin-top:50px">
-              </div>
-              <video style="margin-top:-70px;margin-bottom:28px" width="300" height="300">
-                <source src="media/movie.mp4" type="video/mp4">
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Finish Touches</h1>
+              <div style="width:892px; height:473px; background-color:rgba(247, 247, 247, 0.72)">
+
+                <video style="position:relative" width="300" height="300">
+                  <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
 
-                <div style="display:flex; margin-left:170px; position:absolute">
-                  <div style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px; display:flex;; cursor:pointer">
-                    <i style="margin-top:25px;margin-left:15px;font-size:20px" class="fas fa-plus-circle"></i>
-                    <div style="margin-top:-10px;margin-left:15px">
-                      <h5>Add</h5>
-                      <h5 style="margin-top:-15px">Video</h5>
-                    </div>
+                <div style="display:flex; left:290px; position:relative">
+                  <div onclick="showHide(id={hide:'modal-content finishing-touches-video-dropdown-1st-btn',show:'modal-content finishing-touches'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex;; cursor:pointer">
+                    <i style="margin-left:30px;margin-top:20px;font-size:30px" class="fas fa-plus"></i>
                   </div>
-                  <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px">
+
+                  <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px">
                     <img style="width:100%" src="./media/person1.png" alt="">
                     <h5>Edit</h5>
-                    <h5 onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'first-section'})">Delete</h5>
+                    <h5 onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'first-section'})">Delete</h5>
                   </div>
 
-                  <div onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'finishing-touches'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px; display:flex;; cursor:pointer; background-color: lightgray">
-                    <i style="margin-top:25px;margin-left:15px;font-size:20px" class="fas fa-plus-circle"></i>
-                    <div style="margin-top:-10px;margin-left:15px">
-                      <h5>Add</h5>
-                      <h5 style="margin-top:-15px">Video</h5>
-                    </div>
+                  <div style="color:gray; width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex; cursor:pointer">
+                    <i style="margin-left:30px;margin-top:20px; font-size:30px" class="fas fa-plus"></i>
                   </div>
                 </div>
 
-                <div style="width:70px;height:65px; background-color:white; position:absolute; text-align:left; margin-left:400px; margin-top:-30px; border-radius:15px">
-                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'finishing-touches-edit-text'})">Text</small> <br>
-                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'finishing-touches-after-image-add'})">Image</small> <br>
-                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'finishing-touches-after-video-add'})">Video</small>
+                <div style="width:70px;height:65px; background-color:white; position:relative; text-align:left; left:330px;top:-30px; border-radius:15px">
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'finishing-touches-edit-text'})">Text</small> <br>
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'finishing-touches-after-image-add'})">Image</small> <br>
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'finishing-touches-after-video-add'})">Video</small>
                 </div>
+              </div>
 
-                <div style="display:flex; margin-top:20px;margin-left:15px">
-                  <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
-                  <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
-                  <div style="display:flex;margin-left:200px;position:absolute">
-                    <h4 style="padding:10px">Finalize video</h4>                    
-                    <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
-                  </div>                  
-                  <div style="position:absolute;margin-top:50px;margin-left:235px">
-                    <hr style="width:10px;width:50px;border-top: 2px solid">
-                  </div>
-                  
-                  
-                  <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-                <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'edit-video'})">Next</button>
+              <div style="display:flex; top:-30px; margin-left:40px; position:relative">
+                <div style="left:10px; position:relative">
+                  <i style="left:40px;top:0px; position:relative" class="fas fa-circle"></i>                    
+                  <button style="border-radius:25px; height:50px; width:160px; color:black; background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'first-section'})"><span style="position:relative; left:10px">Record New</span></button>
                 </div>
                 
-              <div style="margin-top: -484px; margin-left: 629px" class="cross">
-                <i class="fas fa-times"></i>
+                <div style="display:flex; position:relative; left:200px; top:15px">
+                  <i style="padding:5px" class="fas fa-circle"></i>
+                  <i style="padding:5px" class="far fa-circle"></i>
+                </div>    
+                <button style="position:relative; border-radius:25px; height:50px; left:450px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown-1st-btn',show:'insert-style'})">Next</button>
+              </div>
+                
+              
+              <div style="position:relative;top:-220px">
+                <div style="margin-top:-390px" class="setting">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+
             </div>
+      </div>
+    </div>
+
+    <!-- Modal Finishing Touches video dropdown (after 2nd button click) -->
+    <div style="display:none"class="modal-content finishing-touches-video-dropdown-2nd-btn">
+      <div class="">
+            <div class="camera-permission">
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Finish Touches</h1>
+              <div style="width:892px; height:473px; background-color:rgba(247, 247, 247, 0.72)">
+
+                <video style="position:relative" width="300" height="300">
+                  <source src="media/movie.mp4" type="video/mp4">
+                  Your browser does not support the video tag.
+                </video>
+
+                <div style="display:flex; left:290px; position:relative">
+                  <div style="color:gray; width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex; cursor:pointer">
+                    <i style="margin-left:30px;margin-top:20px;font-size:30px" class="fas fa-plus"></i>
+                  </div>
+
+                  <div class="hoverTest" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px">
+                    <img style="width:100%" src="./media/person1.png" alt="">
+                    <h5>Edit</h5>
+                    <h5 onclick="showHide(id={hide:'finishing-touches-video-dropdown-2nd-btn',show:'first-section'})">Delete</h5>
+                  </div>
+
+                  <div onclick="showHide(id={hide:'finishing-touches-video-dropdown-2nd-btn',show:'finishing-touches'})" style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-left:5px; display:flex; cursor:pointer">
+                    <i style="margin-left:30px;margin-top:20px; font-size:30px" class="fas fa-plus"></i>
+                  </div>
+                </div>
+
+                <div style="width:70px;height:65px; background-color:white; position:relative; text-align:left; left:530px;top:-30px; border-radius:15px">
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-2nd-btn',show:'finishing-touches-edit-text'})">Text</small> <br>
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-2nd-btn',show:'finishing-touches-after-image-add'})">Image</small> <br>
+                  <small style="margin-left:20px; cursor:pointer" onclick="showHide(id={hide:'finishing-touches-video-dropdown-2nd-btn',show:'finishing-touches-after-video-add'})">Video</small>
+                </div>
+              </div>
+
+              <div style="display:flex; top:-30px; margin-left:40px; position:relative">
+                <div style="left:10px; position:relative">
+                  <i style="left:40px;top:0px; position:relative" class="fas fa-circle"></i>                    
+                  <button style="border-radius:25px; height:50px; width:160px; color:black; background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'first-section'})"><span style="position:relative; left:10px">Record New</span></button>
+                </div>
+                
+                <div style="display:flex; position:relative; left:200px; top:15px">
+                  <i style="padding:5px" class="fas fa-circle"></i>
+                  <i style="padding:5px" class="far fa-circle"></i>
+                </div>    
+                <button style="position:relative; border-radius:25px; height:50px; left:450px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})">Next</button>
+              </div>
+                
+
+              <!-- Old Style -->
+              <!-- <div style="display:flex; margin-top:20px;margin-left:15px">
+                <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
+                <div style="display:flex;margin-left:200px;position:relative">
+                  <h4 style="padding:10px">Finalize video</h4>                    
+                  <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
+                </div>                  
+                <div style="position:relative;margin-top:50px;margin-left:235px">
+                  <hr style="width:10px;width:50px;border-top: 2px solid">
+                </div>
+                <button style="margin-top:15px;margin-left:500px;position:relative; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-video-dropdown',show:'edit-video'})">Next</button>
+              </div> -->
+              
+              <div style="position:relative;top:-220px">
+                <div style="margin-top:-390px" class="setting">
+                  <i class="fas fa-cog"></i>
+                </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
+
             </div>
       </div>
     </div>
@@ -767,40 +841,63 @@
     <div style="display:none"class="modal-content finishing-touches-edit-text">
       <div class="">
         <div class="camera-permission">
-          <h1>Edit Text Screen</h1>
-          <div style="height:310px;background-color:rgba(211, 211, 211, 0.164)">
-            <img style="height:190px; width:300px" src="./media/branding-assets/edit-text-screen.png" alt="">
-            <h2 style="color:white; position: absolute; margin-top:-120px; margin-left:250px">Some Text</h2>
-            <div style="display:flex; position:absolute; margin-left:180px; margin-top:10px">
-              <small>Duration</small>
-              <div style="margin-left:180px">
-                <small>-</small>
-                <small>3s</small>
-                <small>+</small>
-              </div>              
+          <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Edit Text Screen</h1>
+
+          <div style="width:892px;height:473px; background-color:rgba(247, 247, 247, 0.72)">
+
+            <div>
+              <div>
+                <img style="height:257px; width:343px" src="./media/branding-assets/edit-text-screen.png" alt="">
+                <p style="position:relative; font-family:Poppins; font-size:32px; font-weight:normal; top:-400px; color:white">Some Text</p>
+              </div>
+              
+              <div style="display:flex; position:relative; left:274px; top:-250px">
+                <small>Duration</small>
+                <div style="margin-left:180px">
+                  <small>-</small>
+                  <small>3s</small>
+                  <small>+</small>
+                </div>              
+              </div>
+
+            <div style="position:relative; left:300px; top:-240px">
+              <div style="display:flex; margin-left:-26px">
+                <h5>Background</h5>
+                <h5 style="margin-left:140px">#B724EB</h5>
+              </div>   
+              <div style="position:relative; left:-145px; top:-60px">
+                <img style="margin-left:-250px" src="./media/branding-assets/background-picker.png" alt="">
+                <img style="position:relative; top:35px;left:-200px" src="./media/branding-assets/Ellipse-move-picker.png" alt="">
+              </div>           
+            </div>
+            
+            <div style="position:relative; left:300px; top:-300px">
+              <div style="display:flex; margin-left:-26px">
+                <h5>Text Color</h5>
+                <h5 style="margin-left:140px">#B724EB</h5>
+              </div>
+              <div style="position:relative; left:-145px; top:-60px">
+                <img style="margin-left:-250px" src="./media/branding-assets/text-color-picker.png" alt="">
+                <img style="position:relative; top:35px;left:-200px" src="./media/branding-assets/Ellipse-move-picker.png" alt="">
+              </div> 
             </div>
 
-            <div style="display:flex; position:absolute; margin-left:180px; margin-top:20px">
-              <h5>Background</h5>
-              <h5 style="margin-left:140px">#B724EB</h5>
             </div>
-            <img style="position:absolute; margin-top:260px; margin-left:-290px; width: 280px" src="./media/branding-assets/background-picker.png" alt="">
-            <img style="position:absolute; margin-top:241px; margin-left:-180px" src="./media/branding-assets/Ellipse-move-picker.png" alt="">
 
             
-            <div style="display:flex; position:absolute; margin-left:180px; margin-top:60px">
-              <h5>Text Color</h5>
-              <h5 style="margin-left:150px">#B724EB</h5>
-            </div>
-            <img style="position:absolute; margin-top:300px; margin-left:-290px; width: 280px" src="./media/branding-assets/text-color-picker.png" alt="">
-            <img style="position:absolute; margin-top:281px; margin-left:-180px" src="./media/branding-assets/Ellipse-move-picker.png" alt="">
             
 
           </div>
           
-          <div style="margin-top: -415px; margin-left: 629px" class="cross">
-            <i class="fas fa-times"></i>
-        </div>
+          <div style="position:relative;top:-160px">
+            <div style="margin-top:-390px" class="setting">
+              <i class="fas fa-cog"></i>
+            </div>
+            <div style="margin-top: -425px; margin-left: 890px" class="cross">
+              <i class="fas fa-times"></i>
+            </div>
+          </div>
+          
         <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'finishing-touches-edit-text',show:'finishing-touches'})">Cancel</button>
         <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'finishing-touches-edit-text',show:'finishing-touches-after-text-edit'})">Save</button>
         </div>
@@ -812,7 +909,6 @@
     <div class="">
           <div class="camera-permission">
             <h1>Finish Touches</h1>
-            <!-- <small style="color: gray; margin-top: -20px; margin-left:-30px; position:absolute;">Edit your video</small> -->
             <div style="display:flex;margin-top:50px">
             </div>
             <video style="margin-top:-70px;margin-bottom:28px" width="300" height="300">
@@ -820,7 +916,7 @@
                 Your browser does not support the video tag.
               </video>
 
-              <div style="display:flex; margin-left:120px; position:absolute">
+              <div style="display:flex; margin-left:120px; position:relative">
                 <div style="width:92px; height:69px; border:1px solid lightgray; border-radius:15px;margin-top:-60px;margin-left:5px; display:flex;color:lightgray">
                   <i style="margin-top:25px;margin-left:15px;font-size:20px" class="fas fa-plus-circle"></i>
                   <div style="margin-top:-10px;margin-left:15px">
@@ -852,17 +948,17 @@
               <div style="display:flex; margin-top:20px;margin-left:15px">
                 <!-- <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="recordNew()"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button> -->
                 <button style="margin-top:15px;margin-left:10px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-text-edit',show:'first-section'})"><i style="margin-right:5px;margin-left:-14px" class="fas fa-circle"></i>Record New</button>
-                <div style="display:flex;margin-left:200px;position:absolute">
+                <div style="display:flex;margin-left:200px;position:relative">
                   <h4 style="padding:10px">Finalize video</h4>                    
                   <h4 style="color:lightgray; padding:10px">Finalize insert</h4>
                 </div>                  
-                <div style="position:absolute;margin-top:50px;margin-left:235px">
+                <div style="position:relative;margin-top:50px;margin-left:235px">
                   <hr style="width:10px;width:50px;border-top: 2px solid">
                 </div>
                 
                 
                 <!-- <h4 style="color:lightgray; padding:10px">Insert Styles</h4> -->
-              <button style="margin-top:15px;margin-left:500px;position:absolute; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-text-edit',show:'insert-style'})">Next</button>
+              <button style="margin-top:15px;margin-left:500px;position:relative; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches-after-text-edit',show:'insert-style'})">Next</button>
               </div>
               
             <div style="margin-top: -484px; margin-left: 629px" class="cross">
@@ -870,7 +966,7 @@
           </div>
           </div>
     </div>
-</div>
+  </div>
 
   <!-- Modal Finishing Touches After Image Add -->
   <div style="display:none"class="modal-content finishing-touches-after-image-add">
