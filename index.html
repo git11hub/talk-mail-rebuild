@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <style>
         body {font-family: Arial, Helvetica, sans-serif;}
         
@@ -256,13 +259,16 @@
                     <hr style="width:50px;margin-left:470px;margin-top:-10px;border:1px solid">
 
                     <div style="display:flex;margin-top:50px">
-                      <img style="height:255px;margin-top:-40px;margin-left:70px" src="./media/branding-assets/Rectangle-407.png" alt="">
-                      <h3 style="position:relative; left:-300px; color:white">Create new brand <br>assets</h3>
-                      <!-- <h2 style="margin-left:90px;margin-top:50px;position:absolute;color:white">assets</h2> -->
-                      <img style="position:relative;left:-380px;margin-top:100px; width:10%; height:10%" src="./media/branding-assets/brush.png" alt="">
 
-                      <div style="background-color:white;width:270px;height:255px;margin-left:-280px;margin-top:-40px;border-radius: 25px;">
-                        <div style="margin-left:-130px;margin-top:20px">
+                      <div>
+                        <img style="width:443px; height:325px;margin-left:70px" src="./media/branding-assets/Rectangle-407.png" alt="">
+                        <p style="position:relative; top:-480px;left:-20px; color:white; font-family:Poppins;font-size:26px;font-style:normal;font-weight:500;line-height:39px">Create new brand <br>assets</p>
+                        <img style="position:relative;left:40px;top:-480px; width:74px; height:90px" src="./media/branding-assets/brush.png" alt="">
+                      </div>
+                      
+
+                      <div style="position:relative; background-color:white;width:443px;height:325px;margin-left:-100px;border-radius: 25px;">
+                        <div style="margin-left:-200px;margin-top:50px">
                           <img style="margin-bottom:10px" src="./media/branding-assets/upload-icon.png" alt=""><br>
                           <button style="background-color:rgb(251, 217, 217);border-radius: 25px;border:none;padding:5px"><strong>Upload Logo</strong></button>
                         </div>
@@ -278,27 +284,27 @@
                                 <input type="radio" id="css" name="fav_language" value="CSS">
                                 <label for="css">Center</label><br>
                               </div>
-                              <div style="margin-left:-2px">
+                              <div style="margin-left:-1px">
                                 <input type="radio" id="javascript" name="fav_language" value="JavaScript">
                                 <label for="javascript">Right</label>
                               </div>                              
                             </div>                            
                         </div>
 
-                        <div style="position: relative;display:flex">
-                          <div>
+                        <div style="position:relative; display:flex; top:10px">
+                          <div style="position:relative; left:40px">
                             <small style="margin-left:35px;color:gray">Brand Color</small>
                             <div style="display:flex;margin-left:20px">
                               <img style="height:10px;position:relative;margin-top:5px" src="./media/branding-assets/red-circle.png" alt="">
                               <h5 style="position:relative;margin-top:5px;margin-left:10px">EB248B</h5>
                             </div>
                           </div>
-                          <input style="position:relative;margin-left:50px;width:100px;height:15px;margin-top:20px;border:none;background-color:rgba(128, 128, 128, 0.055);border-radius:25px" type="text" placeholder="Brand Name">                                                 
+                          <input style="position:relative;margin-left:130px;width:100px;height:15px;margin-top:20px;border:none;background-color:rgba(128, 128, 128, 0.055);border-radius:25px" type="text" placeholder="Brand Name">                                                 
                         </div>
 
-                        <div style="display:flex">
+                        <div style="display:flex; position:relative; left:40px;top:50px">
                           <input style="position:relative;width:100px;height:15px;margin-left:30px;border:none;background-color:rgba(128, 128, 128, 0.055);border-radius:25px" type="text" placeholder="Your Name">
-                          <select style="margin-top:0px;margin-left:30px;border:1px solid gray; border-radius:25px; padding:10px" name="Your Role" id="cars">
+                          <select style="margin-top:-10px;margin-left:80px;border:1px solid gray; border-radius:25px; padding:10px" name="Your Role" id="cars">
                             <option value="volvo">Your Role</option>
                           </select>
                         </div>                        
@@ -329,7 +335,7 @@
                   <div style="height:473px;background-color:rgba(211, 211, 211, 0.164)">
                     <div style="display:flex; margin-left:310px">
                       <h4>Branding Style</h4>
-                      <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
+                      <h4 style="color:lightgray;margin-left:10px; cursor:pointer" onclick="showHide(id={hide:'branding-stripe-1-active',show:'branding-assets'})">Branding Assets</h4>
                     </div>
                     <hr style="width:50px;margin-left:340px;margin-top:-10px;border:1px solid">
                     
@@ -371,7 +377,7 @@
                   <div style="height:473px;background-color:rgba(211, 211, 211, 0.164)">
                     <div style="display:flex; margin-left:310px">
                       <h4>Branding Style</h4>
-                      <h4 style="color:lightgray;margin-left:10px">Branding Assets</h4>
+                      <h4 style="color:lightgray;margin-left:10px; cursor:pointer" onclick="showHide(id={hide:'branding-stripe-2-active',show:'branding-assets'})">Branding Assets</h4>
                     </div>
                     <hr style="width:50px;margin-left:340px;margin-top:-10px;border:1px solid">
 
@@ -409,71 +415,74 @@
       <div style="display:none"class="modal-content modal-talk-mail-type">
         <div class="">
               <div class="camera-permission">
-                <h2>Select Your TalkMail Type</h2>
-                <small style="color: gray; position:relative;">Self video viewers record responses at anytime</small>
-                <div style="display:flex; margin-top:30px;margin-left:50px; width:600px">
-                  <div style="">
-                    <div style="height:150px;width:200px">
-                      <img style="width:175px" src="/media/rectangle1.png" alt="talk-mail type">
-                      <img style="width:80px; top:-100px; position:relative" src="/media/simpleTalkMail.png" alt="">
-                    </div>
-                    
-                    <div style="">
-                      <div>
-                        <h5>Simple TalkMail</h5>
-                        <small style="color:gray">Self Video anyone can see</small>
-                      </div><br>
-                      <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'simple-talk-mail'})">Select</button>
-                    </div>
-                  </div>
-                  
-                  <div style="">
-                    <div style="height:160px;width:200px">
-                      <img style="width:175px" src="/media/rectangle2.png" alt="talk-mail type">
-                      <img style="width:80px; top:-100px; position:relative;" src="/media/selfDestuctTalkMail.png" alt="">
-                    </div>
-                    
-                    <div>
-                      <div>
-                        <h5>Self-Destruct TalkMail</h5>
-                        <small style="color:gray">Self Video One-time viewing</small>
-                      </div><br>
-                      <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="selfDestructTalkMail()">Select</button> -->
-                      <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'self-destruct-talk-mail'})">Select</button>
-                    </div>
-                  </div>
-                  
-                  <div style="">
-                    <div style="height:160px;width:200px">
-                      <img style="width:175px" src="/media/rectangle3.png" alt="talk-mail type">
-                      <img style="width:80px; top:-100px;left:30px; position:relative;" src="/media/gropFeedBackTalkMail.png" alt="">
-                      <button style="border-radius: 25px;padding:5px; background-color:white; top:-180px;left:10px; position:relative;border-style: none;width:40px; font-size:12px">New</button>
-                    </div>
-                    
-                    <div>
-                      <div>
-                        <h5>Group-feedBack TalkMail</h5>
-                        <small style="color:gray">Self video viewers record responses at anytime</small>
+                <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Select Your TalkMail Type</h1>
+                <small style="position:relative; font-family:Poppins;font-style:normal;font-weight:500; font-size:12px;text-align:center">Self video viewers record responses at anytime</small>
+                <div style="margin-top:30px; width:892px;height:473px; background-color: rgba(247, 247, 247, 0.72);">
+                    <div style="display:flex; position:relative; left:120px;top:40px">
+                      <div style="background-color:white; width:241.33; height:371px; border-radius:25px; margin:10px">
+                        <div style="height:150px;width:200px">
+                          <img style="width:200px" src="/media/rectangle1.png" alt="talk-mail type">
+                          <img style="width:80px; top:-100px; position:relative" src="/media/simpleTalkMail.png" alt="">
+                        </div>
+                        
+                        <div style="">
+                          <div>
+                            <h5>Simple TalkMail</h5>
+                            <small style="color:gray">Self Video anyone can see</small>
+                          </div><br>
+                          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'simple-talk-mail'})">Select</button>
+                        </div>
                       </div>
-                      <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="groupFeedbackTalkMail()">Select</button> -->
-                      <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'group-feedback-talk-mail'})">Select</button>
+                      
+                      <div style="background-color:white; width:241.33; height:371px; border-radius:25px; margin:10px">
+                        <div style="height:160px;width:200px">
+                          <img style="width:200px" src="/media/rectangle2.png" alt="talk-mail type">
+                          <img style="width:80px; top:-100px; position:relative;" src="/media/selfDestuctTalkMail.png" alt="">
+                        </div>
+                        
+                        <div>
+                          <div>
+                            <h5>Self-Destruct TalkMail</h5>
+                            <small style="color:gray">Self Video One-time viewing</small>
+                          </div><br>
+                          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="selfDestructTalkMail()">Select</button> -->
+                          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'self-destruct-talk-mail'})">Select</button>
+                        </div>
+                      </div>
+                      
+                      <div style="background-color:white; width:241.33; height:371px; border-radius:25px; margin:10px">
+                        <div style="height:160px;width:200px">
+                          <img style="width:200px" src="/media/rectangle3.png" alt="talk-mail type">
+                          <img style="width:80px; top:-100px;left:30px; position:relative;" src="/media/gropFeedBackTalkMail.png" alt="">
+                          <button style="border-radius: 25px;padding:5px; background-color:white; top:-180px;left:10px; position:relative;border-style: none;width:40px; font-size:12px">New</button>
+                        </div>
+                        
+                        <div>
+                          <div style="width:200px">
+                            <h5>Group-feedBack TalkMail</h5>
+                            <small style="color:gray">Self video viewers record responses at anytime</small>
+                          </div>
+                          <!-- <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="groupFeedbackTalkMail()">Select</button> -->
+                          <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'modal-talk-mail-type',show:'group-feedback-talk-mail'})">Select</button>
+                        </div>
+                      </div>
                     </div>
-                  </div>
                 </div>
+                  
 
                 <div style="position:relative; top:-250px">
-                  <i style="position:relative;left:-300px; font-size: 30px;color:lightgray" class="fas fa-angle-left"></i>
-                  <i style="position:relative;left:300px; font-size: 30px" class="fas fa-angle-right"></i>
+                  <i style="position:relative;left:-380px; font-size: 30px;color:lightgray" class="fas fa-angle-left"></i>
+                  <i style="position:relative;left:380px; font-size: 30px" class="fas fa-angle-right"></i>
                 </div>
                 
-                <img style="margin-top:20px" src="/media/sliderDot.PNG" alt="">
+                <img style="position:relative; top:-30px" src="/media/sliderDot.PNG" alt="">
 
-                <div style="position:relative;top:-110px">
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                  <i class="fas fa-times"></i>
-                  </div>
+                <div style="position:relative;top:-270px">
                   <div style="margin-top:-390px" class="setting">
                     <i class="fas fa-cog"></i>
+                  </div>
+                  <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                    <i class="fas fa-times"></i>
                   </div>
                 </div>
                 
@@ -486,25 +495,28 @@
     <div style="display:none"class="modal-content simple-talk-mail">
       <div class="">
             <div class="camera-permission">
-              <h2>Select Your TalkMail Type</h2>
-              <small style="color: gray; position:relative;">Self video viewers record responses at anytime</small>
-              <div style="display:flex;margin-top:10px">
-                <div style="margin-left:220px">
-                  <img style="width:220px" src="/media/simpleTalkmailFull.png" alt="talk-mail type"><br>
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Select Your TalkMail Type</h1>
+              <small style="position:relative; font-family:Poppins;font-style:normal;font-weight:500; font-size:12px;text-align:center">Self video viewers record responses at anytime</small>
+              <div style="display:flex;margin-top:10px; background-color:rgba(247, 247, 247, 0.72); width:892px; height:473px">
+                <div style="margin-left:220px; margin-top:140px; margin:auto; width:50%">
+                  <img style="width:310px" src="/media/simpleTalkmailFull.png" alt="talk-mail type"><br>
                   <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'simple-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
-                  <div>
-                    <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'simple-talk-mail',show:'first-section'})">Let's Begin</button>
-                  </div>
                 </div>
               </div>
-              <div style="position:relative;top:-40px">
-                <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                <i class="fas fa-times"></i>
-                </div>
+
+              <div style="">
+                <button style="border-radius:25px" class="start-btn" onclick="showHide(id={hide:'simple-talk-mail',show:'first-section'})">Let's Begin</button>
+              </div>
+
+              <div style="position:relative;top:-250px">
                 <div style="margin-top:-390px" class="setting">
                   <i class="fas fa-cog"></i>
                 </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
               </div>
+
             </div>
       </div>
   </div>
@@ -513,25 +525,28 @@
     <div style="display:none"class="modal-content self-destruct-talk-mail">
       <div class="">
             <div class="camera-permission">
-              <h2>Select Your TalkMail Type</h2>
-              <small style="color: gray; position:relative;">Self video viewers record responses at anytime</small>
-              <div style="display:flex;margin-top:10px">
-                <div style="margin-left:220px">
-                  <img style="width:220px" src="/media/selfDestructFull.png" alt="talk-mail type"><br>
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Select Your TalkMail Type</h1>
+              <small style="position:relative; font-family:Poppins;font-style:normal;font-weight:500; font-size:12px;text-align:center">Self video viewers record responses at anytime</small>
+              <div style="display:flex;margin-top:10px; background-color:rgba(247, 247, 247, 0.72); width:892px; height:473px">
+                <div style="margin-left:220px; margin-top:140px; margin:auto; width:50%">
+                  <img style="width:310px" src="/media/selfDestructFull.png" alt="talk-mail type"><br>
                   <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'self-destruct-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
-                  <div>
-                    <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'self-destruct-talk-mail',show:'first-section'})">Let's Begin</button>
-                  </div>
                 </div>
               </div>
-              <div style="position:relative;top:-40px">
-                <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                <i class="fas fa-times"></i>
-                </div>
+
+              <div>
+                <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'self-destruct-talk-mail',show:'first-section'})">Let's Begin</button>
+              </div>
+
+              <div style="position:relative;top:-260px">
                 <div style="margin-top:-390px" class="setting">
                   <i class="fas fa-cog"></i>
                 </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
               </div>
+
             </div>
       </div>
   </div>
@@ -540,25 +555,28 @@
     <div style="display:none"class="modal-content group-feedback-talk-mail">
       <div class="">
             <div class="camera-permission">
-              <h2>Select Your TalkMail Type</h2>
-              <small style="color: gray; position:relative;">Self video viewers record responses at anytime</small>
-              <div style="display:flex;margin-top:10px">
-                <div style="margin-left:220px">
-                  <img style="width:220px" src="/media/groupFeedbackFull.png" alt="talk-mail type"><br>
+              <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Select Your TalkMail Type</h1>
+              <small style="position:relative; font-family:Poppins;font-style:normal;font-weight:500; font-size:12px;text-align:center">Self video viewers record responses at anytime</small>
+              <div style="display:flex;margin-top:10px; background-color:rgba(247, 247, 247, 0.72); width:892px; height:473px">
+                <div style="margin-left:220px; margin-top:140px; margin:auto; width:50%">
+                  <img style="width:310px" src="/media/groupFeedbackFull.png" alt="talk-mail type"><br>
                   <small>You have selected simple TalkMail. <span style="color:blue; cursor:pointer" onclick="showHide(id={hide:'group-feedback-talk-mail',show:'modal-talk-mail-type'})">Change</span></small>
-                  <div>
-                    <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'group-feedback-talk-mail',show:'first-section'})">Let's Begin</button>
-                  </div>
                 </div>
               </div>
-              <div style="position:relative;top:-40px">
-                <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                <i class="fas fa-times"></i>
-                </div>
+
+              <div>
+                <button style="margin-top:15px; border-radius:25px" class="start-btn" onclick="showHide(id={hide:'group-feedback-talk-mail',show:'first-section'})">Let's Begin</button>
+              </div>
+
+              <div style="position:relative;top:-260px">
                 <div style="margin-top:-390px" class="setting">
                   <i class="fas fa-cog"></i>
                 </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
               </div>
+
             </div>
       </div>
   </div>
