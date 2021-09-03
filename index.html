@@ -1416,35 +1416,40 @@
     <div style="display:none"class="modal-content insert-style">
       <div class="">
             <div class="camera-permission">
-              <h2>Insert Style</h2>
-              <div style="display:flex;margin-top:50px">
+              <!-- <h2>Insert Style</h2> -->
+              <div style="">
+                <h1 style="font-family:Poppins; font-style:normal; font-weight:900; font-size:32px">Insert Style</h1>
+                <small style="position:relative;top:-20px; font-family:Poppins;font-style:normal;font-weight:500; font-size:12px;text-align:center">What makes TalkMail look-like in your Email</small>
               </div>
-                <video style="margin-top:-60px" width="300" height="300">
-                <source src="media/movie.mp4" type="video/mp4">
+
+              <div style="margin-top:-19px; background:rgba(247, 247, 247, 0.72); width:892px; height:473px">
+                <video style="" width="300" height="300">
+                  <source src="media/movie.mp4" type="video/mp4">
                   Your browser does not support the video tag.
                 </video>
                 <div style="position: relative; top:-30px">
                   <small>You have applied standard style</small>
                   <button style="border:none; background-color:rgb(245, 215, 215);padding:10px;border-radius:25px;cursor:pointer" onclick="showHide(id={hide:'insert-style',show:'after-change-button-click'})">Change</button>
                 </div>
+              </div>
 
-                <div style="display:flex; top:25px;left:40px; position:relative">
-                  <button style="margin-top:15px;margin-left:-8px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
-                  <div style="display:flex; position:relative; left:140px; top:26px">
-                    <i style="padding:5px" class="far fa-circle"></i>
-                    <i style="padding:5px" class="fas fa-circle"></i>
-                  </div> 
-                  <button style="margin-top:15px;margin-left:280px; width:160px;position:relative; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})"><span style="position:relative;margin-left:-10px;margin-top:-10px">Insert TalkMail</span></button>
-                </div>
+              <div style="display:flex;left:110px;top:-40px; position:relative">
+                <button style="position:relative; top:10px;left:-40px; border-radius:25px; height:50px; width:160px; color:black;background-color:rgb(245, 215, 215)" class="start-btn" onclick="showHide(id={hide:'insert-style',show:'finishing-touches'})">Back</button>
+                <div style="position:relative; display:flex; left:150px; top:26px">
+                  <i style="padding:5px" class="far fa-circle"></i>
+                  <i style="padding:5px" class="fas fa-circle"></i>
+                </div> 
+                <button style="position:relative;top:15px;left:330px; width:160px; border-radius:25px; height:50px; background-color: rgb(250, 75, 75)" class="start-btn" onclick="showHide(id={hide:'finishing-touches',show:'insert-style'})"><span style="position:relative;margin-left:-10px;margin-top:-10px">Insert TalkMail</span></button>
+              </div>
                 
-                <div style="position:relative;top:-50px">
-                  <div style="margin-top: -425px; margin-left: 700px" class="cross">
-                  <i class="fas fa-times"></i>
-                  </div>
-                  <div style="margin-top:-390px" class="setting">
-                    <i class="fas fa-cog"></i>
-                  </div>
+              <div style="position:relative;top:-220px">
+                <div style="margin-top:-390px" class="setting">
+                  <i class="fas fa-cog"></i>
                 </div>
+                <div style="margin-top: -425px; margin-left: 890px" class="cross">
+                  <i class="fas fa-times"></i>
+                </div>
+              </div>
             </div>
       </div>
   </div>
